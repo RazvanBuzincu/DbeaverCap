@@ -1,0 +1,31 @@
+<form action="" method='POST' class="row g-3">
+    {{ form.hidden_tag() }}
+    <div class="col-12">
+        {{ form.movie_title.label }}
+        {{ form.movie_title(class='form-control mt-2', placeholder='Enter Movie Title') }}
+        {% for error in form.movie_title.errors %}
+            <span class="err-msg">{{ error }}</span>
+        {% endfor %}
+    </div>
+    <div class="col-12">
+        {{ form.review_text.label }}
+        {{ form.review_text(class='form-control mt-2', placeholder='Write your review here') }}
+    </div>
+    <div class="col-12">
+        {{ form.rating.label }}
+        {{ form.rating(class='form-control mt-2', placeholder='Rate from 0 to 10') }}
+        {% for error in form.rating.errors %}
+            <span class="err-msg">{{ error }}</span>
+        {% endfor %}
+    </div>
+    <div class="col-12">
+        {{ form.reviewer_name.label }}
+        {{ form.reviewer_name(class='form-control mt-2', placeholder='Your Name') }}
+        {% for error in form.reviewer_name.errors %}
+            <span class="err-msg">{{ error }}</span>
+        {% endfor %}
+    </div>
+    <div class="col-12">
+        {{ form.submit(class='btn btn-primary') }}
+    </div>
+</form>

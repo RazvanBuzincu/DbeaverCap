@@ -1,7 +1,5 @@
 {% extends 'base.html' %}
 
-
-
 {% block content %}
 
 <div class="container-fluid justify-content-center">
@@ -9,10 +7,9 @@
         <div class="col-3 ms-5 d-flex flex-column justify-content-center">
             <h2>Welcome to Beaver Reviews</h2>
             <h5>All your reviews can be seen up here</h5>
-            <a href="#" class="btn btn-outline-light mt-3">Add new review</a>
+            <a href="{{ url_for('site.create_review') }}" class="btn btn-outline-light mt-3">Add new review</a>
         </div>
     </div>
 </div>
-
 
 {% endblock content %}
