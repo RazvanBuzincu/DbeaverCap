@@ -1,0 +1,36 @@
+body {
+    background-image: url('https://wallpapers.com/images/hd/cinema-theater-screen-red-interior-mdii641t9soyox58.jpg');
+    background-size: cover;
+    background-position: inherit;
+    
+    
+}
+
+
+
+  
+
+.nav-link:hover {
+    color: cyan; 
+    background-color: purple; 
+    border-radius: 5px; 
+    background-color: red;
+}
+
+
+.container-fluid .shop-header h2,
+.container-fluid .shop-header h5,
+.container-fluid .shop-header a {
+    color: #fff;
+}
+
+.container-fluid .shop-header a.btn:hover {
+    background-color: black; 
+    color: white; 
+}
+
+.container-fluid .shop-header h2 {
+    font-size: maiormarime; 
+    font-weight: bold; 
+
+}
