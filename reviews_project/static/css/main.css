@@ -5,11 +5,7 @@ body {
     
     
 }
-
-
-
-  
-
+ 
 .nav-link:hover {
     color: cyan; 
     background-color: purple; 
@@ -34,3 +30,7 @@ body {
     font-weight: bold; 
 
 }
+
+
+
+
