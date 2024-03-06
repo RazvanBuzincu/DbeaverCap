@@ -5,24 +5,7 @@ from reviews_project.helpers import get_movie_details
 
 site = Blueprint('site', __name__, template_folder='site_templates')
 
-# @site.route('/')
-# def home():
-#     # Query your database to grab all movie reviews to display
-#     all_reviews = MovieReview.query.all()  
 
-#     return render_template('front.html', reviews=all_reviews)  
-
-# @site.route('/')
-# def home():
-#     all_reviews = MovieReview.query.all()
-    
-#     # Preluăm detalii despre fiecare film folosind titlul din recenzie
-#     for review in all_reviews:
-#         movie_details = get_movie_details(review.movie_title)
-#         # Atașăm detalii la fiecare obiect de recenzie sub forma unui dicționar nou
-#         review.movie_details = movie_details if movie_details != "Movie not found." else None
-
-#     return render_template('front.html', reviews=all_reviews)
 
 @site.route('/')
 def home():
@@ -31,7 +14,6 @@ def home():
 
     for review in all_reviews:
         movie_details = get_movie_details(review.movie_title)
-        # Verifică dacă filmul a fost găsit înainte de a adăuga detalii
         if movie_details != "Movie not found.":
             review_data = {
                 'review': review,
