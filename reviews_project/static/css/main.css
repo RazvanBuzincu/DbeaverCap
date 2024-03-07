@@ -2,7 +2,8 @@ body {
     background-image: url('https://wallpapers.com/images/hd/cinema-theater-screen-red-interior-mdii641t9soyox58.jpg');
     background-size: cover;
     background-position: inherit;
-    
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     
 }
  
@@ -31,6 +32,10 @@ body {
 
 }
 
-
+@media (min-width: 1200px) {
+    body {
+        background-size: 100%;  /* Reduci dimensiunea fundalului */
+    }
+}
 
 
