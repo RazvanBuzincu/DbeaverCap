@@ -1,3 +1,5 @@
 reviews_env
 .env
 __pycache__
+migrations
+image_cache.sqlite
