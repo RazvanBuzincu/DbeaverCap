@@ -34,7 +34,7 @@ body {
 
 @media (min-width: 1200px) {
     body {
-        background-size: 100%;  /* Reduci dimensiunea fundalului */
+        background-size: 100%;  
     }
 }
 
