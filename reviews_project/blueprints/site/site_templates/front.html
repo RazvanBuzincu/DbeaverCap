@@ -60,7 +60,8 @@
 
     </div>
 {% else %}
-<p class="message-login-required">You must be logged in to see the reviews.</p>
+<a href="{{ url_for('auth.signin') }}" class="message-login-required">You must be logged in to see the reviews.</a>
+
 {% endif %}
 
 {% endblock content %}

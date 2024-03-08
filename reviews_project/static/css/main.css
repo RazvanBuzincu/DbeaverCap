@@ -38,4 +38,14 @@ body {
     }
 }
 
+.message-login-required {
+    color: white;
+    text-decoration: none; 
+    border: 1px solid white; 
+    padding: 5px 10px; 
+    border-radius: 5px; 
+    display: inline-block; 
+    margin-left: 120px; 
+}
+
 
